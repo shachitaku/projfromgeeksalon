@@ -1,0 +1,6 @@
+framework module Pods_NewScenary {
+  umbrella header "Pods-NewScenary-umbrella.h"
+
+  export *
+  module * { export * }
+}
