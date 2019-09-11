@@ -19,11 +19,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        GMSServices.provideAPIKey("AIzaSyAnP_kL8M3xAkjHNU2vgmqsPsWi8Wv6NOw");
-        GMSPlacesClient.provideAPIKey("AIzaSyAnP_kL8M3xAkjHNU2vgmqsPsWi8Wv6NOw");
+        GMSServices.provideAPIKey([APIKEY]);
+        GMSPlacesClient.provideAPIKey([APIKEY]);
  
         //Databaseとの接続コード
-    NCMB.setApplicationKey("5ee89f24f08a874a069948e5ac5d508dbe7f8957a0bac52d6ccd459642bbcc82", clientKey: "3305ac6caae748938138f7388ea28e2d81b7c0086c0c65c340dd99ea153a1ab8")
+    NCMB.setApplicationKey([APIKEY], clientKey: [APIKEY])
         
         let ud = UserDefaults.standard
         let isLogin = ud.bool(forKey: "isLogin")
